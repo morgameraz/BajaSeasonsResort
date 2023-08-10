@@ -1,0 +1,88 @@
+
+
+<h1>Ejercicio Matematico</h1>
+<html>
+
+
+</head>
+<title>Matematicas  </title>
+</head>
+<body>
+    <h1 style="color: rgb(14, 179, 116);"
+<img src="dibujo de mate.jpeg" width="300" height="200">
+
+<h2></h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problema Matemático</title>
+</head>
+<body>
+    <h1>Problema de Sumas y Restas</h1>
+    
+    <p>Resuelve el siguiente problema:</p>
+    
+    <p>Si tienes 10 manzanas y das 3 manzanas a tu amigo, luego recibes 5 manzanas más, ¿cuántas manzanas tendrás?</p>
+    
+    <form>
+        <label for="respuesta">Tu respuesta:</label>
+        <input type="text" id="respuesta" name="respuesta">
+        <button type="button" onclick="verificarRespuesta()">Verificar</button>
+    </form>
+    
+    <p id="resultado"></p>
+    
+    <script>
+        function verificarRespuesta() {
+            var respuestaUsuario = document.getElementById("respuesta").value;
+            var respuestaCorrecta = 10 - 3 + 5;
+            
+            if (parseInt(respuestaUsuario) === respuestaCorrecta) {
+                document.getElementById("resultado").textContent = "¡Respuesta correcta! ¡Tendrás " + respuestaCorrecta + " manzanas!";
+            } else {
+                document.getElementById("resultado").textContent = "Respuesta incorrecta. Inténtalo de nuevo.";
+            }
+        }
+    </script>
+</body>
+
+<a href="./Pag.Libre.html">¡Haz clic aqui!</a>
+
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de División</title>
+</head>
+<body>
+  <h1>Calculadora de División</h1>
+  
+  <label for="numerator">Numerador:</label>
+  <input type="number" id="numerator" name="numerator">
+  
+  <label for="denominator">Denominador:</label>
+  <input type="number" id="denominator" name="denominator">
+  
+  <button onclick="calculateDivision()">Calcular</button>
+  
+  <p id="result"></p>
+  
+  <script>
+    function calculateDivision() {
+      const numerator = parseFloat(document.getElementById("numerator").value);
+      const denominator = parseFloat(document.getElementById("denominator").value);
+      
+      if (denominator === 0) {
+        document.getElementById("result").innerText = "No se puede dividir por cero.";
+      } else {
+        const divisionResult = numerator / denominator;
+        document.getElementById("result").innerText = `Resultado: ${divisionResult}`;
+      }
+    }
+  </script>
+</body>
+</html>
